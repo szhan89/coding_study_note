@@ -4,6 +4,9 @@ Time Complexity - It represents the number of times a statement execute, not the
   2. Calcuate no execution levels(i.e linear, quadratic, logarithmic, etc.)
   3. Represent it with O
   *Consider the worst scenario(longest) time complexity
+  
+  Sum Rule: T1(n)=O(f(n)), T2(n)=O(g(n)); T1(n)+T2(n)=O(max(f(n),g(n)))
+  Product Rule: T1(n)=O(f(n)), T2(n)=O(g(n)); T1(n)*T2(n)=(O(max(f(n)*g(n))))
 
   -O(n):
   
