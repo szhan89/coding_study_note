@@ -1,0 +1,35 @@
+Time Complexity - It represents the number of times a statement execute, not the time take to run the program.
+  Steps to calculate time complexity:
+  1. Find the most frequent executed statement
+  2. Calcuate no execution levels(i.e linear, quadratic, logarithmic, etc.)
+  3. Represent it with O
+  *Consider the worst scenario(longest) time complexity
+
+  -O(n):
+  
+    for (int i=0; i<n; i++){      //cost = 3, no times=1, no times= n
+      printf("Hello World!");     //cost = 1, no times=n
+      i++;                        //cost = 1, no times=n
+    }
+
+T(n)=1+4n=O(n)
+    
+  -O(n^k): 
+  
+    for (int i=0; i<n; i++){      //cost = 3, no times=1, no times = n
+      i++;                        //cost = 1, no times=n
+      for (int j=0; j<n; j++){    //cost = 3, no times=1, no times = n
+        printf("Hello World!");   //cost = 1, no times=n
+        j++;                      //cost = 1, no times=n
+      }
+    }
+T(n)=1+3n*(1+4n)=1+3n+12n^2=0(n^2)
+  
+  
+  -O(logn)：
+  
+    for (int i = 2; i < n; i++) {
+        i *= 2;
+        printf("%i\n", i);
+    }
+   
